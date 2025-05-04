@@ -16,7 +16,8 @@ const Contact = () => {
 
         emailjs.sendForm('service_v58fp3v', 'template_qa6wz6l', form, "islyy32MRDQbxGe-W")
           .then((result) => {
-              alert('Email sent successfully:', result.text);
+              console.log('Email sent successfully:', result.text);
+              alert('Email sent successfully.')
               // Clear form fields after successful submission
               setName('');
               setEmail('');
